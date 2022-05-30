@@ -1,0 +1,93 @@
+html, body{
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+}
+body{
+    background-color: #cccecf7a;
+    padding: 0.1px;
+    font-family: monospace;
+}
+.container{
+    padding: 10px;
+    border-radius: 3px;
+}
+h1{
+    text-align: center;
+    font-size: xxx-large;
+    font-weight: 600;
+    padding: 5px;
+    color: #2f2b2bd9;
+}
+.pageContainer{
+    padding: 20px;
+    max-width: 800px;
+    border-radius: 5px;
+    margin: 10px auto;
+    background-color: #fff;
+    box-shadow: 0px 0px 13px 4px #726e6ec9;
+}
+.multiInput{
+    display: flex;
+    gap: 10px;
+}
+.inputField{
+    width: 100%;
+}
+fieldset{
+    border-style: dashed;
+    border-color: #568285ad;
+    padding-bottom: 0;
+    margin: 10px;
+}
+legend{
+    font-weight: bold;
+}
+.inputEle{
+    box-sizing: border-box;
+    width: 100%;
+    padding: 8px;
+    border-radius: 2px;
+    border: 1px solid #a39c9c99;
+    outline: none;
+    margin-top: 7px;
+}
+.inputEle:focus{
+    outline: none;
+    border: 1px solid #767474be;
+}
+.errorMessage{
+    display: block;
+    padding: 1px;
+    color: red;
+    font-family: monospace;
+    margin-bottom: 5px;
+
+    margin-top: 1px;
+}
+.buttonContainer{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    padding: 2px;
+    margin: 20px 5px 5px 5px; 
+}
+.buttonContainer button{
+    padding: 10px 15px;
+    border-radius: 3px;
+    font-family: monospace;
+    font-weight: bold;
+    font-size: medium;
+    color: #fff;
+    background-color: black;
+    outline: none;
+    border: none;
+}
+.buttonContainer button:hover{
+    cursor: pointer;
+    background-color: #323233f2;
+    color: white;
+}
+
+/* Page Three Style */

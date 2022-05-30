@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Multi-page Registration Form</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+    <div class="container">
+            <h1>Personal Information Form</h1>
+            <div class="pageContainer">
+                <div class="pageOne" id="pageOne">
+                    <fieldset class="fieldContainer">
+                        <legend>Name</legend>
+                        <div class="inputDiv">
+                            <div class="inputRow">
+                                <div class="multiInput">
+                                    <div class="inputField">
+                                        <input type="text" name="firstname" id="firstName" class="inputEle" placeholder="First" required>
+                                        <span class="errorMessage" id="firstNameErr">&nbsp;</span>
+                                    </div>
+                                    <div class="inputField">
+                                        <input type="text" name="lastname" id="lastName" class="inputEle" placeholder="Last" required>
+                                        <span class="errorMessage" id="lastNameErr">&nbsp;</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </fieldset>
+
+                    <fieldset class="fieldContainer">
+                        <legend>Date of Birth</legend>
+                        <div class="inputDiv">
+                            <div class="inputRow">
+                                <div class="singleInput">
+                                    <div class="inputField">
+                                        <input type="date" name="dateofbirth" id="dateOfBirth" class="inputEle" placeholder="MM/DD/YYYY" required>
+                                        <span class="errorMessage" id="dateOfBirthErr">&nbsp;</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </fieldset>
+
+                    <fieldset class="fieldContainer">
+                        <legend>Email</legend>
+                        <div class="inputDiv">
+                            <div class="inputRow">
+                                <div class="singleInput">
+                                    <div class="inputField">
+                                        <input type="email" name="email" id="userEmail" class="inputEle" required>
+                                        <span class="errorMessage" id="emailErr">&nbsp;</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </fieldset>
+
+                    <fieldset class="fieldContainer">
+                        <legend>Father's Name</legend>
+                        <div class="inputDiv">
+                            <div class="inputRow">
+                                <div class="multiInput">
+                                    <div class="inputField">
+                                        <input type="text" name="fathernameFirst" id="fatherNameFirst" class="inputEle" placeholder="First"  required>
+                                        <span class="errorMessage" id="fatherNameFirstErr">&nbsp;</span>
+                                    </div>
+                                    <div class="inputField">
+                                        <input type="text" name="fathernameLast" id="fatherNameLast" placeholder="Last" class="inputEle" required>
+                                        <span class="errorMessage" id="fatherNameLastErr">&nbsp;</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </fieldset>
+
+                    <fieldset class="fieldContainer">
+                        <legend>Mother's Name</legend>
+                        <div class="inputDiv">
+                            <div class="inputRow">
+                                <div class="multiInput">
+                                    <div class="inputField">
+                                        <input type="text" name="mothernameFirst" id="motherNameFirst" placeholder="First" class="inputEle" required>
+                                        <span class="errorMessage" id="motherFirstNameErr">&nbsp;</span>
+                                    </div>
+                                    <div class="inputField">
+                                        <input type="text" name="mothernameLast" id="motherNameLast" placeholder="Last" class="inputEle" required>
+                                        <span class="errorMessage" id="motherLastNameErr">&nbsp;</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </fieldset>
+
+                    <fieldset class="fieldContainer">
+                        <legend>Gender</legend>
+                        <div class="inputDiv">
+                            <div class="inputRow">
+                                <div class="singleInput">
+                                    <div class="inputField">
+                                        <input type="radio" name="gender" id="genderMale" value="Male" >Male
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="inputRow">
+                                <div class="singleInput">
+                                    <div class="inputField">
+                                        <input type="radio" name="gender" id="genderFemale" value="Female">Female
+                                    </div>
+                                </div>
+                            </div>    
+                            <span class="errorMessage" id="genderErr">&nbsp;</span>
+                        </div>
+                    </fieldset>
+
+                    <fieldset class="fieldContainer">
+                        <legend>Nationality</legend>
+                        <div class="inputDiv">
+                            <div class="inputRow">
+                                <div class="singleInput">
+                                    <div class="inputField">
+                                        <input type="text" name="nationality" id="nationality" class="inputEle" required>
+                                        <span class="errorMessage" id="nationalityErr">&nbsp;</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </fieldset>
+
+                    <fieldset class="fieldContainer">
+                        <legend>Home Address</legend>
+                        <div class="inputDiv">
+                            <div class="inputRow">
+                                <div class="singleInput">
+                                    <div class="inputField">
+                                        <input type="text" name="streetaddress" id="streetAddress" class="inputEle" placeholder="Street Address" required>
+                                        <span class="errorMessage" id="streetAddressErr">&nbsp;</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="inputRow">
+                                <div class="multiInput">
+                                    <div class="inputField">
+                                        <input type="text" name="cityname" id="cityName" placeholder="City" class="inputEle" required>
+                                        <span class="errorMessage" id="cityNameErr">&nbsp;</span>
+                                    </div>
+                                    <div class="inputField">
+                                        <select name="countryname" id="countryName" class="inputEle" required>
+                                            <option value="" disabled selected hidden>Country</option>
+                                            <option value="india">India</option>
+                                            <option value="usa">USA</option>
+                                            <option value="china">China</option>
+                                            <option value="pakistan">Pakistan</option>
+                                            <option value="bangladesh">Bangladesh</option>
+                                            <option value="nepal">Nepal</option>
+                                            <option value="uk">United Kingdom(UK)</option>
+                                            <option value="germany">Germany</option>
+                                        </select>
+                                        <span class="errorMessage" id="countryNameErr">&nbsp;</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </fieldset>
+                    
+                    <fieldset class="fieldContainer">
+                        <legend>Telephone - Home</legend>
+                        <div class="inputDiv">
+                            <div class="inputRow">
+                                <div class="singleInput">
+                                    <div class="inputField">
+                                        <input type="text" name="telephone" id="telephone" class="inputEle" required>
+                                        <span class="errorMessage" id="telephoneErr">&nbsp;</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </fieldset>
+
+                    <fieldset class="fieldContainer">
+                        <legend>Telephone - Mobile</legend>
+                        <div class="inputDiv">
+                            <div class="inputRow">
+                                <div class="singleInput">
+                                    <div class="inputField">
+                                        <input type="text" name="telephonemobile" id="telephoneMobile" class="inputEle" required>
+                                        <span class="errorMessage" id="telephoneMobileErr">&nbsp;</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </fieldset>
+
+                    <div class="buttonContainer" id="nextButtonContainer">
+                        <button id="nextButton" onclick="formValidation()">Save and Next</button>
+                    </div>
+                </div>
+            </div>
+    </div>
+    <script src="main.js"></script>
+</body>
+</html>

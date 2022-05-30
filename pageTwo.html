@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Multi-page Registration Form - 2</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Edecution Detail Form</h1>
+        <div class="pageContainer">
+            <div class="pageTwo" id="pageTwo">
+                <!--Input Division-->
+                <fieldset class="fieldContainer" id="hscField">
+                    <legend>HSC Details</legend>
+                    <div class="inputDiv">
+                        <div class="inputRow">
+                            <div class="singleInput">
+                                <div class="inputField">
+                                    <input type="text" name="hscinstitutionname" id="hscInstitutionName" class="inputEle" placeholder="Institution Name" required>
+                                    <span class="errorMessage" id="hscInstitutionNameErr">&nbsp;</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="inputRow">
+                            <div class="multiInput">
+                                <div class="inputField">
+                                    <select name="hscboardname" id="hscBoardName" class="inputEle" required>
+                                        <option value="" disabled selected hidden>HSC Board</option>
+                                        <option value="CBSE">CBSE</option>
+                                        <option value="ICSE">ICSE</option>
+                                        <option value="StateBoard">State board</option>
+                                    </select>
+                                    <span class="errorMessage" id="hscBoardNameErr">&nbsp;</span>
+                                </div>
+                                <div class="inputField">
+                                    <input type="text" name="hscpersantage" id="hscPersantage" class="inputEle" placeholder="Persantage">
+                                    <span class="errorMessage" id="hscPersantageErr">&nbsp;</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </fieldset>
+                <!--Input Division-->
+                <fieldset class="fieldContainer" id="sscField">
+                    <legend>SSC Details</legend>
+                    <div class="inputDiv">
+                        <div class="inputRow">
+                            <div class="singleInput">
+                                <div class="inputField">
+                                    <input type="text" name="sscinstitutionname" id="sscInstitutionName" class="inputEle" placeholder="Institution Name" required>
+                                    <span class="errorMessage" id="sscInstitutionNameErr">&nbsp;</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="inputRow">
+                            <div class="multiInput">
+                                <div class="inputField">
+                                    <select name="sscboardname" id="sscBoardName" class="inputEle" required>
+                                        <option value="" disabled selected hidden>SSC Board</option>
+                                        <option value="CBSE">CBSE</option>
+                                        <option value="ICSE">ICSE</option>
+                                        <option value="StateBoard">State board</option>
+                                    </select>
+                                    <span class="errorMessage" id="sscBoardNameErr">&nbsp;</span>
+                                </div>
+                                <div class="inputField">
+                                    <input type="text" name="sscpersantage" id="sscPersantage" class="inputEle" placeholder="Persantage">
+                                    <span class="errorMessage" id="sscPersantageErr">&nbsp;</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </fieldset>
+                <fieldset class="fieldContainer" id="currentPursuing">
+                    <legend>Current Pursuing</legend>
+                    <div class="inputDiv">
+                        <div class="inputrow">
+                            <div class="multiInput">
+                                <div class="inputField">
+                                    <input type="text" name="currentcoursename" id="currentCourseName" class="inputEle" placeholder="Course Name" required>
+                                    <span class="errMessage" id="currentCourseNameErr">&nbsp;</span>
+                                </div>
+                                <div class="inputField">
+                                    <input type="text" name="currentinstitutionname" id="currentInstitutionName" class="inputEle" placeholder="Institution Name" required>
+                                    <span class="errorMessage" id="currentInstitutionNameErr">&nbsp;</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="inputRow">
+                            <div class="multiInput">
+                                <div class="inputField">
+                                    <input type="text" name="currentcoursepersantage" id="currentCoursePersantage" class="inputEle" placeholder="Overall Persantage">
+                                    <span class="errorMessage" id="currentCoursePersantageErr">&nbsp;</span>
+                                </div>
+                                <div class="inputField">
+                                    <input type="text" name="currentcoursebacklogs" id="currentCourseBacklogs" class="inputEle" placeholder="Current Backlogs(if any)">
+                                    <span class="errorMessage" id="currentCourseBacklogsErr">&nbsp;</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </fieldset>
+                <div class="buttonContainer" id="nextButtonContainer">
+                    <button id="nextButton" onclick="pageTwoValidation()"> Save and Next</button>
+                </div>
+            </div>
+        </div>
+    </div>    
+    <script src="pageTwo.js"></script>    
+</body>
+</html>
