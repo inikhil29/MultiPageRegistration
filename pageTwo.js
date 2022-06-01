@@ -21,7 +21,7 @@ function pageTwoValidation(){
                 currentInstitutionName: (document.getElementById('currentInstitutionName').value).trim(),
                 currentCourseName: (document.getElementById('currentCourseName').value).trim(),
                 currentPersantage: (document.getElementById('currentCoursePersantage').value).trim(),
-                currentBacklogs: (document.getElementById('curentCourseBacklogs').value).trim()
+                currentBacklogs: (document.getElementById('currentCourseBacklogs').value).trim()
             }
             localStorage.setItem("pageTwoData", JSON.stringify(obj));
             console.log("Completed Page Two");
