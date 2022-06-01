@@ -8,7 +8,7 @@ function pageTwoValidation(){
     let currentInstitutionNameVal = instituteNameValidation((document.getElementById('currentInstitutionName').value).trim(), document.getElementById('currentInstitutionNameErr'));
     let currentCourseNameVal = courseNameValidation((document.getElementById('currentCourseName').value).trim(), document.getElementById('currentCourseNameErr'));
     let currentPersantageVal = persantageValidation((document.getElementById('currentCoursePersantage').value).trim(), document.getElementById('currentCoursePersantageErr'));
-    let currentBacklogsVal = backlogsValidation((document.getElementById('curentCourseBacklogs').value).trim(), document.getElementById('currentCourseBacklogsErr'));
+    let currentBacklogsVal = backlogsValidation((document.getElementById('currentCourseBacklogs').value).trim(), document.getElementById('currentCourseBacklogsErr'));
     if(hscInstitutionNameVal && hscBoardNameVal && hscPersantageVal && sscInstitutionNameVal && sscBoardNameVal && sscPersantageVal && currentInstitutionNameVal && currentCourseNameVal && currentPersantageVal &&currentBacklogsVal){
         void function(){
             let obj = {
